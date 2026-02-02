@@ -10,25 +10,22 @@ void calculator() {
 		std::cout << opreator;
 		std::cout << "enter secend number";
 		std::cin >> num2;
-		switch (opreator) {
-		case 1: "+";
-		    result= num1 + num2;
-			std::cout << result;
-			break;
-		case 2: "-";
-			result = num1 - num2;
-			std::cout << result;
-			break;
-		case 3: "*";
-			result = num1 * num2;
-			std::cout << result;
-			break;
-		case 4: "/";
-			result = num1 / num2;
-			break;
-	}
-		if (opreator!=0) {
-			result = num1 / num2;
+		if(operator=='+'){
+        result=num1+num2;
+		std::cout<<"result sum is"<<result;
+	    }
+	   if(operator=='-'){
+       result=num1-num2;
+	   std::cout<<"result sum is"<<result;
+	   }
+       if(operator=='*'){
+       result=num1*num2;
+	   std::cout<<"result sum is"<<result;
+	   }
+       else if(operator=='/'){
+         if(num2!=2/0){
+		result=num1/num2;
+		std::cout<<"result sum is"<<result;
 		}
 	}
 int main() {
